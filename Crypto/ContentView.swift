@@ -17,7 +17,16 @@ struct ContentView: View {
                     .bold()
                     .foregroundColor(Color.theme.tertiary)
                 
+                Text("Hello, world!")
+                    .bold()
+                    .foregroundColor(Color.theme.textPrimary)
                 
+                Text("Hello, world!")
+                    .bold()
+                    .foregroundColor(Color.theme.textSecondary)
+                
+                Divider()
+                    .foregroundColor(Color.theme.stroke)
                 Button {
                     
                 } label: {
@@ -37,4 +46,5 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+        .preferredColorScheme(.dark)
 }
